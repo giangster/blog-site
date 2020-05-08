@@ -1,0 +1,43 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "main-title" "nav-bar";
+  grid-area: header;
+}
+
+.main-title {
+  grid-area: main-title;
+  margin-top: 30px;
+}
+
+.main-title-text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . . . . .";
+  grid-area: nav-bar;
+}
+
+.nav-item {
+  align-self: center;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  padding: 25px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}

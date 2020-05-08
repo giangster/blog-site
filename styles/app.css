@@ -1,0 +1,22 @@
+@import "./blog-item.css";
+@import "./header.css";
+@import "./footer.css";
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "header" "main-content" "footer";
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
